@@ -50,7 +50,8 @@ ul {
 form {
     background: white;
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -69,4 +70,15 @@ button {
     background: #333;
     color: white;
     border: none;
+}
+
+@media (max-width: 768px) {
+ .container {
+    flex-direction: column;
+    text-align: center;
+ }
+
+ img {
+    margin: 0 auto;
+ }
 }
