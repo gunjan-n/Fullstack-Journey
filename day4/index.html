@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyWebsite — Build Modern Websites</title>
+</head>
+<body>
+    <div class="site">
+        <header class="site-header">
+            <nav class="navbar container" aria-label="Main Navigation">
+                <a href="/" class="brand">MyWebsite</a>
+
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Menu</span>
+                    ☰
+                </button>
+
+                <ul id="nav-menu" class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero container" id="home">
+                <div class="hero-content">
+                    <h1>Build Modern Websites</h1>
+                    <p class="lead">I'm learning full-stack development and improving my skills every day.</p>
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="#services">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <img src="https://picsum.photos/500" alt="a random photo">
+                </div>
+            </section>
+
+            <section class="services" id="services">
+                <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Web Design</h3>
+                        <p>Clean, modern interfaces that perform fast on any device.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Frontend Development</h3>
+                        <p>React, component-driven development, and accessible UI.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Backend APIs</h3>
+                        <p>RESTful APIs, authentication and databases.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Responsive Layouts</h3>
+                        <p>Mobile-first design and CSS techniques for real world projects.</p>
+                    </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about container">
+                <h2>About This Project</h2>
+                <p>This project is part of my 90-day full-stack development journey. It demonstrates responsive design using Flexbox, CSS Grid, and media queries. I will continue improving my skills by building real-world projects.</p>
+            </section>
+
+            <section id="contact" class="contact container">
+                <h2>Contact</h2>
+                <form class="contact-form" action="#" method="post" aria-label="Contact form">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" required />
+
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+
+            <footer class="site-footer">
+                <div class="container">
+                    <p>&copy; 2025 MyWebsite — Designed and Built by Gunjan Naraniya</p>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>
