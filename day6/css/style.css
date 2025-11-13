@@ -2,9 +2,10 @@
    VARIABLES & RESET
 --------------------------------*/
 :root {
-    --primary: #1f2937;
-    --secondary: #4b5563;
-    --bg: #f4f6f8;
+    --primary: #1E293B;
+    --accent: #38BDF8;
+    --bg: #F8FAFC;
+    --text: #1E293B;
     --white: #ffffff;
     --max-width: 1100px;
     --radius: 10px;
@@ -17,10 +18,18 @@
 }
 
 body {
-    font-family: system-ui, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--primary);
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 4rem 0;
 }
 
 .container {
@@ -28,6 +37,18 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
 }
+
+section {
+  opacity: 0.05;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* ------------------------------
    NAVBAR
@@ -79,6 +100,22 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--primary);
+    position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 /* ------------------------------
@@ -141,6 +178,18 @@ body {
     border: 1px solid var(--primary);
 }
 
+.btn-primary:hover {
+  background: var(--accent);
+  color: var(--white);
+  transition: 0.3s ease;
+}
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--white);
+  transition: 0.3s ease;
+}
+
+
 /* ------------------------------
    SKILLS SECTION
 --------------------------------*/
@@ -190,6 +239,15 @@ body {
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
+}
+
+.skill, .project-card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.skill:hover, .project-card:hover {
+  transform: translateY(-5px);
 }
 
 /* ------------------------------

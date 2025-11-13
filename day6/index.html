@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <title>Gunjan Naraniya | Full-Stack Developer</title>
 </head>
 <body>
@@ -163,5 +164,17 @@
         </div>
     </footer>
 
+
+
+    <script>
+        const sections = document.querySelectorAll("section");
+        window.addEventListener("scroll", () => {
+            const trigger = window.innerHeight * 0.85;
+            sections.forEach(sec => {
+            const top = sec.getBoundingClientRect().top;
+            if (top < trigger) sec.classList.add("visible");
+            });
+        });
+    </script>
 </body>
 </html>
