@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#counter-value {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* Dark theme */
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+.dark .card {
+  background-color: #333;
+}

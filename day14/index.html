@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 14 - DOM Basics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 id="main-heading" class="title">Day 14: DOM Complete</h1>
+
+  <!-- Text Section -->
+  <section class="card">
+    <p class="text">Paragraph One</p>
+    <p class="text">Paragraph Two</p>
+
+    <button id="text-btn">Change Text</button>
+  </section>
+
+  <!-- Image Section -->
+  <section class="card">
+    <img
+      id="image"
+      src="https://via.placeholder.com/150"
+      alt="placeholder"
+    />
+    <br />
+    <button id="img-btn">Change Image</button>
+  </section>
+
+  <!-- Counter Project -->
+  <section class="card">
+    <h2>Counter</h2>
+    <p id="counter-value">0</p>
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+    <button id="reset">Reset</button>
+  </section>
+
+  <!-- Theme Toggle -->
+  <section class="card">
+    <h2>Theme Toggle</h2>
+    <button id="theme-btn">Toggle Theme</button>
+  </section>
+
+  <!-- Live Text Preview -->
+  <section class="card">
+    <h2>Live Text Preview</h2>
+    <input type="text" id="text-input" placeholder="Type something..." />
+    <p id="preview-text"></p>
+    <p id="char-count">Characters: 0</p>
+  </section>
+
+  <!-- Style Change -->
+  <section class="card">
+    <button id="style-btn">Change Heading Style</button>
+  </section>
+
+  <!-- onclick vs addEventListener -->
+  <section class="card">
+    <button id="old-btn">onclick Button</button>
+    <button id="new-btn">addEventListener Button</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
